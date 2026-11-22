@@ -1,0 +1,39 @@
+{
+  "source": "WRDS CRSP CIZ or legacy, verified at runtime",
+  "start": "2018-01-01",
+  "end": "2026-11-21",
+  "permno": {
+    "SPY": 84398,
+    "XLB": 86449,
+    "XLC": 17940,
+    "XLE": 86454,
+    "XLF": 86455,
+    "XLI": 86456,
+    "XLK": 86457,
+    "XLP": 86452,
+    "XLRE": 15732,
+    "XLU": 86458,
+    "XLV": 86451,
+    "XLY": 86453
+  },
+  "fee_bps_one_way": 10.0,
+  "factor_groups": [
+    "momentum",
+    "relative_strength",
+    "volatility",
+    "downside",
+    "drawdown",
+    "beta"
+  ],
+  "not_included": [
+    "valuation",
+    "earnings revisions",
+    "accounting quality",
+    "verified riskfree Sharpe"
+  ],
+  "limitations": [
+    "monthly holdings approximation",
+    "target-weight turnover proxy",
+    "no point-in-time fundamental data"
+  ]
+}

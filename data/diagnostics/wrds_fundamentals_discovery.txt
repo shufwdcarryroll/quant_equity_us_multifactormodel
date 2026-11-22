@@ -1,0 +1,107 @@
+SIADS 699 | WRDS value/revisions source check
+No credentials or raw company records will be saved.
+
+AVAILABLE CANDIDATE LIBRARIES:
+audit_audit_comp, comp, comp_bank_daily, comp_execucomp, comp_global_daily, comp_na_daily_all, comp_segments_hist_daily, comp_urq, comph, compsamp, compsamp_all, compsamp_computext, compsamp_snapshot, compseg, execcomp, ibes, ibessamp_kpi, tr_ibes, tr_ibes_guidance, wrdsapps_finratio, wrdsapps_finratio_ccm, wrdsapps_finratio_ibes, wrdsapps_finratio_ibes_ccm, wrdsapps_link_comp_eushort, wrdsapps_link_crsp_comp_bdx, wrdsapps_link_crsp_factset, wrdsapps_link_crsp_ibes
+
+[audit_audit_comp] 59 tables; 4 relevant matches
+Matching tables: f06_form_ap_divided, f06_form_ap_not_divided, f34_form_ap_divided, f34_form_ap_not_divided
+
+[comp] 293 tables; 30 relevant matches
+Matching tables: bank_idesind, co_idesind, co_industry, g_co_idesind, g_co_industry, g_idx_daily, g_idx_index, g_idx_mth, g_idxcst_his, g_sec_divid, g_sec_idesind, idx_ann, idx_anndes, idx_daily, idx_index, idx_mth, idx_qrt, idx_qrtdes, idxcst_his, it_msummary, r_idxclscd, r_majidxcl, r_sectors, sec_divid, sec_idcurrent, sec_idesind, sec_idhist, spidx_cst, wrds_idx_cst_current, wrds_ratios
+  SCHEMA comp.co_industry: gvkey, consol, popsrc, fyr, naicsh, sich, year, datadate
+  SCHEMA comp.g_co_industry: gvkey, consol, popsrc, fyr, naicsh, sich, year, datadate
+  SCHEMA comp.r_sectors: spseccd, spsecdesc
+
+[comp_bank_daily] 20 tables; 1 relevant matches
+Matching tables: bank_idesind
+
+[comp_execucomp] 15 tables; 0 relevant matches
+Matching tables: (none)
+
+[comp_global_daily] 125 tables; 11 relevant matches
+Matching tables: g_co_idesind, g_co_industry, g_idx_daily, g_idx_index, g_idx_mth, g_idxcst_his, g_sec_divid, g_sec_idesind, r_idxclscd, r_majidxcl, r_sectors
+  SCHEMA comp_global_daily.g_co_industry: gvkey, consol, popsrc, fyr, naicsh, sich, year, datadate
+  SCHEMA comp_global_daily.r_sectors: spseccd, spsecdesc
+
+[comp_na_daily_all] 206 tables; 21 relevant matches
+Matching tables: co_idesind, co_industry, idx_ann, idx_anndes, idx_daily, idx_index, idx_mth, idx_qrt, idx_qrtdes, idxcst_his, it_msummary, r_idxclscd, r_majidxcl, r_sectors, sec_divid, sec_idcurrent, sec_idesind, sec_idhist, spidx_cst, wrds_idx_cst_current, wrds_ratios
+  SCHEMA comp_na_daily_all.co_industry: gvkey, consol, popsrc, fyr, naicsh, sich, year, datadate
+  SCHEMA comp_na_daily_all.r_sectors: spseccd, spsecdesc
+
+[comp_segments_hist_daily] 14 tables; 0 relevant matches
+Matching tables: (none)
+
+[comp_urq] 4 tables; 0 relevant matches
+Matching tables: (none)
+
+[comph] 22 tables; 2 relevant matches
+Matching tables: pitidhistcdn, pitidhistus
+
+[compsamp] 15 tables; 0 relevant matches
+Matching tables: (none)
+
+[compsamp_all] 11 tables; 0 relevant matches
+Matching tables: (none)
+
+[compsamp_computext] 2 tables; 0 relevant matches
+Matching tables: (none)
+
+[compsamp_snapshot] 10 tables; 0 relevant matches
+Matching tables: (none)
+
+[compseg] 14 tables; 0 relevant matches
+Matching tables: (none)
+
+[execcomp] 15 tables; 0 relevant matches
+Matching tables: (none)
+
+[ibes] 194 tables; 25 relevant matches
+Matching tables: det_guidance, det_guidance_ext, id, id_guidance, id_guidance_ext, idsum, nstatsum_epsint, nstatsum_epsus, nstatsum_xepsint, nstatsum_xepsus, nstatsumu_epsint, nstatsumu_epsus, nstatsumu_xepsint, nstatsumu_xepsus, recdid, recdidsum, split_guidance, statsum_epsint, statsum_epsus, statsum_xepsint, statsum_xepsus, statsumu_epsint, statsumu_epsus, statsumu_xepsint, statsumu_xepsus
+  SCHEMA ibes.nstatsum_epsus: ticker, cusip, oftic, cname, statpers, measure, fiscalp, fpi, estflag, curcode, numest, numup, numdown, medest, meanest, stdev, highest, lowest, usfirm, fpedats, actual, actdats_act, acttims_act, anndats_act, anntims_act, curr_act
+  SCHEMA ibes.nstatsumu_epsus: ticker, cusip, oftic, cname, statpers, measure, fiscalp, fpi, estflag, curcode, numest, numup, numdown, medest, meanest, stdev, highest, lowest, usfirm, fpedats
+  SCHEMA ibes.statsum_epsus: ticker, cusip, oftic, cname, statpers, measure, fiscalp, fpi, estflag, curcode, numest, numup, numdown, medest, meanest, stdev, highest, lowest, usfirm, fpedats, actual, actdats_act, acttims_act, anndats_act, anntims_act, curr_act
+  SCHEMA ibes.statsumu_epsus: ticker, cusip, oftic, cname, statpers, measure, fiscalp, fpi, estflag, curcode, numest, numup, numdown, medest, meanest, stdev, highest, lowest, usfirm, fpedats
+
+[ibessamp_kpi] 9 tables; 2 relevant matches
+Matching tables: statsum_kpiint, statsum_kpius
+
+[tr_ibes] 166 tables; 20 relevant matches
+Matching tables: id, idsum, nstatsum_epsint, nstatsum_epsus, nstatsum_xepsint, nstatsum_xepsus, nstatsumu_epsint, nstatsumu_epsus, nstatsumu_xepsint, nstatsumu_xepsus, recdid, recdidsum, statsum_epsint, statsum_epsus, statsum_xepsint, statsum_xepsus, statsumu_epsint, statsumu_epsus, statsumu_xepsint, statsumu_xepsus
+  SCHEMA tr_ibes.nstatsum_epsus: ticker, cusip, oftic, cname, statpers, measure, fiscalp, fpi, estflag, curcode, numest, numup, numdown, medest, meanest, stdev, highest, lowest, usfirm, fpedats, actual, actdats_act, acttims_act, anndats_act, anntims_act, curr_act
+  SCHEMA tr_ibes.nstatsumu_epsus: ticker, cusip, oftic, cname, statpers, measure, fiscalp, fpi, estflag, curcode, numest, numup, numdown, medest, meanest, stdev, highest, lowest, usfirm, fpedats
+  SCHEMA tr_ibes.statsum_epsus: ticker, cusip, oftic, cname, statpers, measure, fiscalp, fpi, estflag, curcode, numest, numup, numdown, medest, meanest, stdev, highest, lowest, usfirm, fpedats, actual, actdats_act, acttims_act, anndats_act, anntims_act, curr_act
+  SCHEMA tr_ibes.statsumu_epsus: ticker, cusip, oftic, cname, statpers, measure, fiscalp, fpi, estflag, curcode, numest, numup, numdown, medest, meanest, stdev, highest, lowest, usfirm, fpedats
+
+[tr_ibes_guidance] 13 tables; 5 relevant matches
+Matching tables: det_guidance, det_guidance_ext, id_guidance, id_guidance_ext, split_guidance
+
+[wrdsapps_finratio] 2 tables; 2 relevant matches
+Matching tables: firm_ratio, id
+
+[wrdsapps_finratio_ccm] 2 tables; 2 relevant matches
+Matching tables: firm_ratio_ccm, id_ccm
+
+[wrdsapps_finratio_ibes] 2 tables; 2 relevant matches
+Matching tables: firm_ratio_ibes, id_ibes
+
+[wrdsapps_finratio_ibes_ccm] 2 tables; 2 relevant matches
+Matching tables: firm_ratio_ibes_ccm, id_ibes_ccm
+
+[wrdsapps_link_comp_eushort] 1 tables; 1 relevant matches
+Matching tables: compeushortlink
+
+[wrdsapps_link_crsp_comp_bdx] 1 tables; 1 relevant matches
+Matching tables: bdxcrspcomplink
+
+[wrdsapps_link_crsp_factset] 1 tables; 1 relevant matches
+Matching tables: fscrsplink
+
+[wrdsapps_link_crsp_ibes] 1 tables; 0 relevant matches
+Matching tables: (none)
+
+INTERPRETATION:
+- An available firm-level ratios table is NOT sector-level ratios.
+- WRDS Financial Ratios: Industry Level may be web-only; confirm before assuming direct Python access.
+- IBES summary EPS is company-level. Creating sector revisions requires constituent mapping, not just a ticker filter.
+- If no preaggregated sector series exists, use price/risk factor model as primary project.
